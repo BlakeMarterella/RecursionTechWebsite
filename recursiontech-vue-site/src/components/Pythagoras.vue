@@ -16,7 +16,7 @@ export default defineComponent({
     let ratio: number;
     let max_order: number;
     let min_order: number;
-    // let order_colors: string[];
+    let order_colors: string[] = ['#324142', '#435758', '#648284', '#75989a', '#86aeb0', '#97c4c6', '#a8d9dc', '#b9eff2', '#caffff'];
     let desired_order: number;
     let scales: number[];
 
@@ -44,6 +44,9 @@ export default defineComponent({
 
     let final_height: number;
 
+    /**
+     * Call this function when the element is loaded in
+     */
     onMounted(() => {
       // Grab Canvas
       var canvas = <HTMLCanvasElement>document.getElementById("pythagoras_canvas");
@@ -143,7 +146,7 @@ export default defineComponent({
       vueCanvas.translate((vueCanvas.canvas.width / 2 ) - (base_dim / 2), vueCanvas.canvas.height);
       
       // Draw the trunk of the tree
-      vueCanvas.fillStyle = '#000000';
+      vueCanvas.fillStyle = order_colors[0];
       drawBranch(base_dim, base_dim);
       vueCanvas.save();
 
@@ -174,7 +177,7 @@ export default defineComponent({
       var next_order = current_order + 1;
 
       // Set the color of the current layer
-      // vueCanvas.fillStyle = order_colors[current_order];
+      vueCanvas.fillStyle = order_colors[current_order];
 
       // Draw the left branch
       vueCanvas.save();
