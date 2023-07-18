@@ -14,7 +14,7 @@ function Pythagoras(canvas_id,standalone){
 	this.ratio = 0.5*Math.sqrt(2);
 	
 	this.max_order = 9;
-	this.order_colors = Gradient("#D4E576","#126845",this.max_order+2);
+	this.order_colors = Gradient("#83c7ec","#186d9a",this.max_order+2);
 	this.min_order = 0;
 	this.desired_order = 7;
 	

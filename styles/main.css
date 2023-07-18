@@ -6,13 +6,13 @@ body {
     color: #777;
     letter-spacing: -0.05em;
     font-size: 20px;
-    background: url(background.jpg) repeat-x top left;
+    background: url(background.jpg) repeat-x top left;;
 }
 
 
 canvas {
     display: block;
-    width: 650px;
+    width: 900px;
     margin: 0 auto 20px;
     cursor: crosshair;
 }
