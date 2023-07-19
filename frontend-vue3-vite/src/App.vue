@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import Pythagoras from './components/Pythagoras.vue';
 </script>
 
 <template>
+  <nav>
+    <router-link to="/">Home</router-link> 
+    <router-link to="/about">About</router-link>
+  </nav>
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -12,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <Pythagoras></Pythagoras>
 </template>
 
 <style scoped>
