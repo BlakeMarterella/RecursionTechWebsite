@@ -1,5 +1,5 @@
 <template>
-    <div class="canvas_wrapper">
+    <div class="flex w-full justify-center">
       <canvas id="pythagoras_canvas" width="800" height="500" @mousemove="handleMouseMove"></canvas>
     </div>
   </template>
@@ -227,7 +227,7 @@
        * @param pos_y the mouse's position on the y axis
        */
       const updateOrder: any = (pos_y: number) => {
-        var min_y = vueCanvas.canvas.height * 0.1
+        var min_y = vueCanvas.canvas.height * 0.2
         var max_y = vueCanvas.canvas.height - (2 * min_y);
         var y = Math.min(max_y,  Math.max(0, -(pos_y - (vueCanvas.canvas.height - min_y))));
         
