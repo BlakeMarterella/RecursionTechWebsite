@@ -1,5 +1,5 @@
 <template>
-  <h1>Recursion Tech</h1>
+  <h1 class="text-3xl">Recursion Tech</h1>
   <PythagorasFractal />
 </template>
 
