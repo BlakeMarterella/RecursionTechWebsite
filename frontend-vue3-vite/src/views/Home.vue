@@ -4,10 +4,18 @@ import Pythagoras from '../components/Pythagoras.vue';
 </script>
 
 <template>
-    <!-- Site Wrapper -->
-    <div class="bg-rt-dark-slate">
-        <MainHeader msg="Recursion Tech"/>
-        <!-- <Pythagoras></Pythagoras> -->
+    <!-- TODO Add Navbar -->
+
+    <!-- Site Content Wrapper -->
+    <div class="relative overflow-hidden">
+        <div class="hidden lg:block w-full h-full absolute">
+            <div
+                class="bg-image-mockups absolute z-20 w-full h-full bg-no-repeat bg-auto bg-right-top -right-72 xl:-right-28">
+            </div>
+        </div>
+        <MainHeader />
     </div>
+
+    <!-- TODO Add Footer -->
 </template>
 
