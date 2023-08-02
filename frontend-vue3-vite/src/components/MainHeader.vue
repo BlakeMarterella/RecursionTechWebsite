@@ -14,20 +14,20 @@
     <!-- Content on the left -->
     <div class="w-1/2 mr-32 h-full flex flex-col justify-end pb-4 lg:pb-0 lg:justify-center">
         <div class="h-1/2 pr-12 flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
-            <h1 class="text-4xl lg:text-5xl text-neutral-white pb-2">
+            <h1 class="text-4xl lg:text-5xl text-neutral-white pb-2 animate-fade-up">
                 Recursion Tech
             </h1>
-            <h2 class="text-xl lg:text-2xl text-neutral-very-light-gray pb-5">
+            <h2 class="text-xl lg:text-2xl text-neutral-very-light-gray pb-5 animate-fade-up">
                 Innovation meets Execution
             </h2>
-            <p class="text-neutral-grayish-blue text-xs lg:text-base leading-5 mb-7">
+            <p class="text-neutral-grayish-blue text-xs lg:text-base leading-5 mb-7 animate-fade duration-100">
                 We engineer cutting-edge software solutions to propel your business into the future. 
                 
                 Our step-by-step process ensures a seamless transition
                 from ideas to reality, empowering your brand for tomorrow's challenges!
             </p>
             <button
-                class="bg-primary-blue px-7 py-3 rounded-full text-neutral-white text-xs bg-gradient-to-r from-primary-blue to-primary-teal hover:button-brightness mb-7 focus:outline-none focus:ring ring-green-400">
+                class="animate-fade duration-100 bg-primary-blue px-7 py-3 rounded-full text-neutral-white text-xs bg-gradient-to-r from-primary-blue to-primary-teal hover:button-brightness mb-7 focus:outline-none focus:ring ring-green-400">
                 Learn More
             </button>
         </div>
