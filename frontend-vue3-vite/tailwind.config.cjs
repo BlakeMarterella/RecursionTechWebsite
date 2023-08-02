@@ -14,15 +14,22 @@ module.exports = {
       },
       colors: {
         primary: {
-          'dark-blue': 'hsl(233, 26%, 24%)',
-          'lime-green': 'hsl(136, 65%, 51%)',
-          'bright-cyan': 'hsl(192, 70%, 51%)',
+          'dark-blue': '#2d314d',
+          'lime-green': '#31d35c',
+          'bright-cyan': '#2bb7da',
+          'blue': '#0d81b1',
+          'teal': '#09b5a8'
+        },
+        background: {
+          'dark-navy': '#0c0e1a',
+          'navy': '#151c3e',
+          'light-navy': '#1f2c64'
         },
         neutral: {
           'grayish-blue': 'hsl(233, 8%, 62%)',
-          'light-grayish-blue': 'hsl(220, 16%, 96%)',
-          'very-light-gray': 'hsl(0, 0%, 98%)',
-          white: 'hsl(0, 0%, 100%)',
+          'light-grayish-blue': '#9698a6',
+          'very-light-gray': '#fafafa',
+          white: '#ffffff',
         },
       },
       backgroundImage: (theme) => ({
