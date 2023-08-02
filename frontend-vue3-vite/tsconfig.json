@@ -11,6 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
     "sourceMap": true,
+    "outDir": "target",
     "baseUrl": ".",
     "paths": {
       "@/*": [
@@ -32,6 +33,7 @@
     "tests/**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "taget"
   ]
 }
