@@ -2,8 +2,8 @@
     height="345">
     <defs>
         <linearGradient id="c" x1="0%" x2="99.58%" y1="36.139%" y2="63.745%">
-            <stop offset="0%" stop-color="#33D35E" />
-            <stop offset="100%" stop-color="#2AB6D9" />
+            <stop offset="0%" stop-color="#09b5a8" />
+            <stop offset="100%" stop-color="#0d81b1" />
         </linearGradient>
         <filter id="a" width="116.9%" height="158.7%" x="-10.8%" y="-28.8%"
             filterUnits="objectBoundingBox">
