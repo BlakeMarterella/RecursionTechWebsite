@@ -21,10 +21,7 @@
               Innovation meets Execution
             </h2>
             <p class="text-neutral-grayish-blue text-xs lg:text-base leading-5 mb-7 animate-fade duration-100">
-              We engineer cutting-edge software solutions to propel your business into the future.
-
-              Our step-by-step process ensures a seamless transition
-              from ideas to reality, empowering your brand for tomorrow's challenges!
+              Crafting bespoke software solutions and leveraging scalable technologies that enable your business to thrive in an ever-evolving digital landscape.
             </p>
             <button
               class="animate-fade duration-100 bg-primary-blue px-7 py-3 rounded-full text-neutral-white text-xs bg-gradient-to-r from-primary-blue to-primary-teal hover:button-brightness mb-7 focus:outline-none focus:ring ring-green-400">

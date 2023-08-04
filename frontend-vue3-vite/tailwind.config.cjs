@@ -21,7 +21,7 @@ module.exports = {
         },
         background: {
           'dark-navy': '#0c0e1a',
-          'navy': '#151c3e',
+          'navy': '#14172b',
           'light-navy': '#1f2c64'
         },
         neutral: {
