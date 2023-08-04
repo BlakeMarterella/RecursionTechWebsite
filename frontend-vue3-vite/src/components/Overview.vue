@@ -11,12 +11,12 @@
         What is Recursion Tech?
       </h2>
       <!-- Subheading/description -->
-      <p class="w-1/2 mx-auto text-neutral-grayish-blue text-sm lg:text-base leading-5">
+      <p class="px-8 md:w-1/2 mx-auto text-neutral-grayish-blue text-sm lg:text-base leading-5 mb-4">
         We engineer cutting-edge software solutions to propel your business into the future. Our step-by-step process ensures a seamless transition from ideas to reality, empowering your brand for tomorrow's challenges!
       </p>
       <!-- Honeycomb fractal image -->
       <div class=" w-1/2 mx-auto">
-        <img src="../assets/honeycomb_fractal.png" class="mx-auto w-auto h-80 ">
+        <img src="../assets/honeycomb_fractal.png" class="mx-auto w-auto h-40 md:h-80 ">
       </div>
     </div>
   </div>
