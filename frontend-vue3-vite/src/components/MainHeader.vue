@@ -7,7 +7,7 @@
     <!-- Mobile Background -->
     <div class="bg-header-mobile bg-custom-mobile-header-size absolute w-full h-full bg-no-repeat lg:hidden"></div>
     <!-- Desktop Background -->
-    <div class="bg-header-desktop absolute w-full h-full bg-no-repeat hidden lg:block bg-left -right-42.6%"></div>
+    <div class="bg-header-desktop absolute w-full h-full bg-no-repeat hidden lg:block bg-left -right-42.6% animate-fade"></div>
     <!-- Content -->
     <div class="mr-0 md:mr-32 w-screen h-screen px-8 md:pl-16 relative z-20">
       <div class="h-full w-full flex flex-col-reverse md:flex-row items-center justify-center">
