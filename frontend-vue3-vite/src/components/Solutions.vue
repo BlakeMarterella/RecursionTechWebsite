@@ -1,5 +1,6 @@
 <script setup lang="ts">
-
+import Tabs from './Tabs.vue';
+import Tab from './Tab.vue';
 </script>
 
 <template>
@@ -11,15 +12,56 @@
         Solutions
       </h2>
       <!-- Subheading/description -->
-      <p class="px-8 md:w-1/2 mx-auto text-neutral-grayish-blue text-sm lg:text-base leading-5 mb-4">
-        We have a strategic 6 phase design, transforming your initial concept from paper to a robust, scalable software solution, designed and implemented by Recursion Tech.
+      <p class="px-8 md:w-3/4 lg:w-1/2 mx-auto text-neutral-grayish-blue text-sm lg:text-base leading-5 mb-4">
+        We have a strategic 6 phase design, transforming your initial concept from paper to a robust, scalable software
+        solution, designed and implemented by Recursion Tech.
       </p>
-      <!-- Design Process Icon -->
+      <!-- Design Process Icon2 -->
       <div class="w-full flex items-center justify-center">
-        <img src="../assets/design_process_icon.png" class=" w-auto h-20 md:h-40 ">
+        <img src="../assets/design_process/phase1.png"
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+        <img src="../assets/design_process/phase2.png"
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+        <img src="../assets/design_process/phase3.png"
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+        <img src="../assets/design_process/phase4.png"
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+        <img src="../assets/design_process/phase5.png"
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+        <img src="../assets/design_process/phase6.png"
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+        <img src="../assets/white-logo.png" class="hidden md:block w-12 md:w-20 lg:w-32 h-auto">
       </div>
     </div>
+
+    <!-- Content -->
+    <div>
+      <!-- Card -->
+      <div class="flex text-neutral-white mx-16">
+        
+        <tabs>
+          <tab title="Tab 1">
+            <h3>This is Tab 1</h3>
+          </tab>
+          <tab title="Tab 2">
+            <h3>This is Tab 2</h3>
+          </tab>
+        </tabs>
+
+      </div>
+    </div>
+
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.phase-icon {
+  transition: transform .3s;
+}
+
+.phase-icon:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+</style>
