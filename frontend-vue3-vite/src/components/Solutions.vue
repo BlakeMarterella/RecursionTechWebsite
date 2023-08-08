@@ -1,20 +1,27 @@
-<script setup lang="ts">
-import Tabs from './Tabs.vue';
-import Tab from './Tab.vue';
+<script lang="ts">
+import { ref, defineComponent, computed } from 'vue';
+import { designPhase, designPhases } from '../data/design_phases';
 
-import {
-  defineComponent,
-  onMounted,
-  onBeforeUnmount,
-  ref,
-  watch,
-  toRefs,
-  h,
-  VNode,
-  computed,
-  onBeforeUpdate,
-} from "vue";
 
+export default defineComponent({
+  name: 'SolutionsComponent',
+  setup() {
+    const phaseIndex = ref<number>(1);
+    const phases = ref<designPhase[]>(designPhases);
+    let curPhase = ref<designPhase>(designPhases[0])
+
+    function setPhase(index: number) {
+      phaseIndex.value = index;
+      curPhase.value = phases.value[index - 1];
+    }
+
+    return {
+      phaseIndex,
+      curPhase,
+      setPhase
+    }
+  }
+});
 </script>
 
 <template>
@@ -31,28 +38,35 @@ import {
         solution, designed and implemented by Recursion Tech.
       </p>
       <!-- Design Process Icon2 -->
-      <div class="w-full flex items-center justify-center">
+      <div class="w-full flex items-center justify-center mb-4">
         <img src="../assets/design_process/phase1.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
-        <img src="../assets/design_process/phase2.png" class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer"
-          @click="console.log(Tabs.selectedIndex.ba)">
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(1)">
+        <img src="../assets/design_process/phase2.png"
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(2)">
         <img src="../assets/design_process/phase3.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(3)">
         <img src="../assets/design_process/phase4.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(4)">
         <img src="../assets/design_process/phase5.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(5)">
         <img src="../assets/design_process/phase6.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(6)">
         <img src="../assets/white-logo.png" class="hidden md:block w-12 md:w-20 lg:w-32 h-auto">
       </div>
     </div>
     <!-- Card -->
-    <div class="flex-col text-neutral-white mx-16 w-full">
-      
-      <div class="flex items-center w-full">
-        <img src="../assets/design_process/phase1.png" class="w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+    <div class="text-neutral-white px-16 w-full">
 
+      <div class="flex-col items-center justify-center w-full">
+        <div class="flex-col items-center justify-center text-center mb-3 text-xl">
+          <h3>Phase {{ phaseIndex }}</h3>
+          <img :src="'src/assets/design_process/' + curPhase.icon" class="w-12 md:w-20 lg:w-32 h-auto mx-auto my-2">
+          <h3>{{ curPhase.name }}</h3>
+        </div>
+
+        <div class="text-sm">
+          <p>{{ curPhase.description }}</p>
+        </div>
       </div>
 
       <div>
