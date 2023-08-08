@@ -1,6 +1,20 @@
 <script setup lang="ts">
 import Tabs from './Tabs.vue';
 import Tab from './Tab.vue';
+
+import {
+  defineComponent,
+  onMounted,
+  onBeforeUnmount,
+  ref,
+  watch,
+  toRefs,
+  h,
+  VNode,
+  computed,
+  onBeforeUpdate,
+} from "vue";
+
 </script>
 
 <template>
@@ -20,8 +34,8 @@ import Tab from './Tab.vue';
       <div class="w-full flex items-center justify-center">
         <img src="../assets/design_process/phase1.png"
           class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
-        <img src="../assets/design_process/phase2.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
+        <img src="../assets/design_process/phase2.png" class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer"
+          @click="console.log(Tabs.selectedIndex.ba)">
         <img src="../assets/design_process/phase3.png"
           class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
         <img src="../assets/design_process/phase4.png"
@@ -33,24 +47,18 @@ import Tab from './Tab.vue';
         <img src="../assets/white-logo.png" class="hidden md:block w-12 md:w-20 lg:w-32 h-auto">
       </div>
     </div>
+    <!-- Card -->
+    <div class="flex-col text-neutral-white mx-16 w-full">
+      
+      <div class="flex items-center w-full">
+        <img src="../assets/design_process/phase1.png" class="w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer">
 
-    <!-- Content -->
-    <div>
-      <!-- Card -->
-      <div class="flex text-neutral-white mx-16">
-        
-        <tabs>
-          <tab title="Tab 1">
-            <h3>This is Tab 1</h3>
-          </tab>
-          <tab title="Tab 2">
-            <h3>This is Tab 2</h3>
-          </tab>
-        </tabs>
+      </div>
+
+      <div>
 
       </div>
     </div>
-
   </div>
 </template>
 

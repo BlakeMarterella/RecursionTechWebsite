@@ -11,9 +11,9 @@ import Pythagoras from '../components/Pythagoras.vue';
     <!-- Site Content Wrapper -->
     <div class="relative overflow-hidden">
         <MainHeader />
-        <Overview />
-        <Solutions />
     </div>
+    <Overview />
+    <Solutions />
 
     <!-- TODO Add Footer -->
 </template>
