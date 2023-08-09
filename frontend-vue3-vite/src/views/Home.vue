@@ -2,6 +2,7 @@
 import MainHeader from '../components/MainHeader.vue';
 import Overview from '../components/Overview.vue';
 import Solutions from '../components/Solutions.vue';
+import Testimonials from '../components/Testimonials.vue';
 import Pythagoras from '../components/Pythagoras.vue';
 </script>
 
@@ -14,6 +15,7 @@ import Pythagoras from '../components/Pythagoras.vue';
     </div>
     <Overview />
     <Solutions />
+    <Testimonials />
 
     <!-- TODO Add Footer -->
 </template>
