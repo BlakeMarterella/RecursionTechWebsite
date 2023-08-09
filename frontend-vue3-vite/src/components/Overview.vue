@@ -7,7 +7,7 @@
     <!-- Wrapper -->
     <div class="w-full flex-col justify-center items-center text-center">
       <!-- Heading -->
-      <h2 class="text-3xl lg:text-4xl text-neutral-white pb-5">
+      <h2 class="text-3xl lg:text-4xl text-neutral-white pb-5 px-4">
         What is Recursion Tech?
       </h2>
       <!-- Subheading/description -->
