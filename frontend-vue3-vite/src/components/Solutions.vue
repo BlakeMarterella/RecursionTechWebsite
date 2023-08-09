@@ -39,18 +39,18 @@ export default defineComponent({
       </p>
       <!-- Design Process Icon2 -->
       <div class="w-full flex items-center justify-center mb-4">
-        <img src="../assets/design_process/phase1.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(1)">
-        <img src="../assets/design_process/phase2.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(2)">
-        <img src="../assets/design_process/phase3.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(3)">
-        <img src="../assets/design_process/phase4.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(4)">
-        <img src="../assets/design_process/phase5.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(5)">
-        <img src="../assets/design_process/phase6.png"
-          class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer" @click="setPhase(6)">
+        <img src="../assets/design_process/phase1.png" class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer"
+          @click="setPhase(1)">
+        <img src="../assets/design_process/phase2.png" class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer"
+          @click="setPhase(2)">
+        <img src="../assets/design_process/phase3.png" class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer"
+          @click="setPhase(3)">
+        <img src="../assets/design_process/phase4.png" class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer"
+          @click="setPhase(4)">
+        <img src="../assets/design_process/phase5.png" class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer"
+          @click="setPhase(5)">
+        <img src="../assets/design_process/phase6.png" class="phase-icon w-12 md:w-20 lg:w-32 h-auto hover:cursor-pointer"
+          @click="setPhase(6)">
         <img src="../assets/white-logo.png" class="hidden md:block w-12 md:w-20 lg:w-32 h-auto">
       </div>
     </div>
@@ -58,14 +58,23 @@ export default defineComponent({
     <div class="text-neutral-white px-16 w-full">
 
       <div class="flex-col items-center justify-center w-full">
-        <div class="flex-col items-center justify-center text-center mb-3 text-xl">
-          <img :src="'src/assets/design_process/phase' + curPhase.id + '_icon.png'" class="h-8 md:h-16 lg:h-24 w-auto mx-auto my-2">
-          <h3>Phase {{ phaseIndex }}</h3>
+        <div class="flex-col items-center justify-center text-center mb-3 md:mb-8 text-xl">
+          <img :src="'src/assets/design_process/phase' + curPhase.id + '_icon.png'"
+            class="h-8 md:h-16 lg:h-20 w-auto mx-auto my-2">
+          <h3 class="underline">Phase {{ phaseIndex }}</h3>
           <h3>{{ curPhase.name }}</h3>
         </div>
 
-        <div class="text-sm">
-          <p>{{ curPhase.description }}</p>
+        <div class="text-sm flex flex-col md:flex-row px-0 md:px-32">
+          <p class="p-4">{{ curPhase.description }}</p>
+          <div class="bg-background-light-navy rounded-xl p-4 md:w-2/3">
+            <h4 class="font-bold">Key Features:</h4>
+            <ul class="list-disc list-inside">
+              <li v-for="feature in curPhase.key_features">
+                {{ feature }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
