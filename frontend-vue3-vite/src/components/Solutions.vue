@@ -68,7 +68,7 @@ export default defineComponent({
         <div class="text-sm flex flex-col md:flex-row px-0 md:px-32">
           <p class="p-4">{{ curPhase.description }}</p>
           <div class="bg-background-light-navy rounded-xl p-4 md:w-2/3">
-            <h4 class="font-bold">Key Features:</h4>
+            <h4 class="font-bold mb-1">Key Features:</h4>
             <ul class="list-disc list-inside">
               <li v-for="feature in curPhase.key_features">
                 {{ feature }}
