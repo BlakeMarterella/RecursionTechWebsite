@@ -59,7 +59,7 @@ export default defineComponent({
 
       <div class="flex-col items-center justify-center w-full">
         <div class="flex-col items-center justify-center text-center mb-3 md:mb-8 text-xl">
-          <img :src="'src/assets/design_process/phase' + curPhase.id + '_icon.png'"
+          <img :src="curPhase.icon"
             class="h-8 md:h-16 lg:h-20 w-auto mx-auto my-2">
           <h3 class="underline">Phase {{ phaseIndex }}</h3>
           <h3>{{ curPhase.name }}</h3>

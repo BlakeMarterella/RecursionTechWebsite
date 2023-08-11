@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="py-7 bg-background-navy lg:py-12">
+  <div class="py-7 bg-background-light-navy lg:py-12">
     <div class="flex flex-col md:flex-row justify-center items-center">
       <div class="text-white">
         <img src="../assets/design_process_logo_no_icons.png" class="h-10 md:h-20 w-auto mb-2">

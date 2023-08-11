@@ -4,6 +4,7 @@ import Overview from '../components/Overview.vue';
 import Solutions from '../components/Solutions.vue';
 import Testimonials from '../components/Testimonials.vue';
 import Footer from '../components/Footer.vue';
+import Contact from '../components/Contact.vue';
 import Pythagoras from '../components/Pythagoras.vue';
 </script>
 
@@ -17,6 +18,7 @@ import Pythagoras from '../components/Pythagoras.vue';
     <Overview />
     <Solutions />
     <Testimonials />
+    <Contact />
 
     <Footer />
 </template>
