@@ -18,6 +18,7 @@ export default defineComponent({
     return {
       phaseIndex,
       curPhase,
+      phases,
       setPhase
     }
   }
@@ -55,8 +56,75 @@ export default defineComponent({
       </div>
     </div>
     <!-- Card -->
-    <div class="text-neutral-white px-16 w-full">
+    <div class="text-neutral-white px-6 md:px-48 w-full">
 
+      <div class="bg-primary-blue bg-gradient-to-r from-primary-blue to-primary-teal h-1 rounded-xl" />
+      <div class="flex flex-col md:flex-row items-center p-4">
+        <div class="flex-grow mr-4 mb-2 md:mb-0">
+          <img src="../assets/design_process/phase1.png" class="w-10 md:w-20 lg:w-32 h-auto ">
+        </div>
+        <div class="">
+          <h3 class="mb-2"><span class="font-extrabold">Phase {{ phases[0].id }}:</span> {{ phases[0].name }}</h3>
+          <p class="md:pr-8">{{ phases[0].description }}</p>
+        </div>
+      </div>
+
+      <div class="bg-primary-blue bg-gradient-to-r from-primary-teal to-primary-blue h-1 rounded-xl" />
+      <div class="flex flex-col md:flex-row-reverse items-center p-4">
+        <div class="flex-grow ml-4 mb-2 md:mb-0">
+          <img src="../assets/design_process/phase2.png" class="w-10 md:w-20 lg:w-32 h-auto ">
+        </div>
+        <div class="md:text-right">
+          <h3 class="mb-2"><span class="font-extrabold">Phase {{ phases[1].id }}:</span> {{ phases[1].name }}</h3>
+          <p class="md:pl-8">{{ phases[1].description }}</p>
+        </div>
+      </div>
+
+      <div class="bg-primary-blue bg-gradient-to-r from-primary-blue to-primary-teal h-1 rounded-xl" />
+      <div class="flex flex-col md:flex-row items-center p-4">
+        <div class="flex-grow mr-4 mb-2 md:mb-0">
+          <img src="../assets/design_process/phase3.png" class="w-10 md:w-20 lg:w-32 h-auto ">
+        </div>
+        <div class="">
+          <h3 class="mb-2"><span class="font-extrabold">Phase {{ phases[2].id }}:</span> {{ phases[2].name }}</h3>
+          <p class="md:pr-8">{{ phases[2].description }}</p>
+        </div>
+      </div>
+
+      <div class="bg-primary-blue bg-gradient-to-r from-primary-teal to-primary-blue h-1 rounded-xl" />
+      <div class="flex flex-col md:flex-row-reverse items-center p-4">
+        <div class="flex-grow ml-4 mb-2 md:mb-0">
+          <img src="../assets/design_process/phase4.png" class="w-10 md:w-20 lg:w-32 h-auto ">
+        </div>
+        <div class="md:text-right">
+          <h3 class="mb-2"><span class="font-extrabold">Phase {{ phases[3].id }}:</span> {{ phases[3].name }}</h3>
+          <p class="md:pl-8">{{ phases[3].description }}</p>
+        </div>
+      </div>
+
+      <div class="bg-primary-blue bg-gradient-to-r from-primary-blue to-primary-teal h-1 rounded-xl" />
+      <div class="flex flex-col md:flex-row items-center p-4">
+        <div class="flex-grow mr-4 mb-2 md:mb-0">
+          <img src="../assets/design_process/phase5.png" class="w-10 md:w-20 lg:w-32 h-auto ">
+        </div>
+        <div class="">
+          <h3 class="mb-2"><span class="font-extrabold">Phase {{ phases[4].id }}:</span> {{ phases[4].name }}</h3>
+          <p class="md:pr-8">{{ phases[4].description }}</p>
+        </div>
+      </div>
+
+      <div class="bg-primary-blue bg-gradient-to-r from-primary-teal to-primary-blue h-1 rounded-xl" />
+      <div class="flex flex-col md:flex-row-reverse items-center p-4">
+        <div class="flex-grow ml-4 mb-2 md:mb-0">
+          <img src="../assets/design_process/phase6.png" class="w-10 md:w-20 lg:w-32 h-auto ">
+        </div>
+        <div class="md:text-right">
+          <h3 class="mb-2"><span class="font-extrabold">Phase {{ phases[5].id }}:</span> {{ phases[5].name }}</h3>
+          <p class="md:pl-8">{{ phases[5].description }}</p>
+        </div>
+      </div>
+
+      <!-- 
       <div class="flex-col items-center justify-center w-full">
         <div class="flex-col items-center justify-center text-center mb-3 md:mb-8 text-xl">
           <img :src="curPhase.icon"
@@ -76,7 +144,7 @@ export default defineComponent({
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div>
 
